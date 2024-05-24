@@ -1,0 +1,66 @@
+.gallery{
+    display: flex;
+    gap:20px;
+}
+
+.image-container{
+    width: 400px;
+}
+
+.image-container img{
+    width: 100%;
+    aspect-ratio: 200 / 133;
+}
+
+.image-responsiva {
+    width: 100%;
+}
+
+.image-responsiva img {
+    width: 100%;
+}
+
+.css div {
+    width:50px;
+	height: 50px;
+	text-align: center;
+	line-height: 45px;
+	background-color:orange;
+    animation: animacio 10s;
+}
+
+@keyframes animacio {
+    30% {
+        background: #ff0;
+        transform: rotate(90deg);
+        height: 60px;
+    }
+    50% {
+        background: #00f;
+        transform: rotate(180deg);
+        height: 80px;
+    }
+    70% {
+        background: #0f0;
+        transform: rotate(180deg);
+        height: 80px;
+        width: 100px;
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.video-container {
+    width: 100%;
+}
+
+.video-container video {
+    width: 100%;
+}
+
+@media screen and (min-width :678px){
+    .video-container {
+        width: 600px;
+    }
+}

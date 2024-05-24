@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="CSS/style.css"> 
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+		<title>Restaurant</title>
+	</head>
+	<body>
+		<section>
+			<h3>Galeria d'imatges</h3>
+			<div class="gallery">
+				<div class="image-container">
+					<img src="IMAGES/plat1.jpg" alt="Imatge plat de verdures">
+				</div>
+				<div class="image-container">
+					<img src="IMAGES/plat2.jpg" alt="Imatge plat despaguettis">
+				</div>
+				<div class="image-container">
+					<img src="IMAGES/plat3.jpg" alt="Imatge plat de salmó amb verdures">
+				</div>
+			</div>
+		</section>
+		
+		<section class="video-container">
+			<video id="video" src="VIDEOS/video.mp4" muted>
+				<source type="video/mp4" src="VIDEOS/video.mp4"></source>
+				<source type="video/mov" src="VIDEOS/video.mp4"></source>
+				<source type="video/avi" src="VIDEOS/video.avi"></source>
+			</video>
+			<div class="controls">
+				<button id="btn-play">
+					<span class="material-symbols-outlined">play_arrow</span>
+				</button>
+
+				<button id="btn-pause">
+					<span class="material-symbols-outlined">pause</span>
+				</button>
+			</div>
+		</section>
+
+		<section class="image-responsiva">
+			<picture>
+				<source media="(min-width: 1024px)" srcset="IMAGES/img_responsive2.webp">
+				<source media="(min-width: 768px)" srcset="IMAGES/img_responsive2_768px.webp">
+				<img src="IMAGES/img_responsive2_576px.webp" alt="">
+			</picture>
+		</section>
+
+		<section class="css">
+			<div>Capa</div>
+		</section>
+
+		<script src="script/video.js"></script>
+	</body>
+</html>
